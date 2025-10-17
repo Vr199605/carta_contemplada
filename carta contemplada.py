@@ -72,7 +72,7 @@ valor_carta = st.sidebar.number_input("Valor da Carta de Crédito (R$)", min_val
 parcelas = st.sidebar.number_input("Número de Parcelas", min_value=1, step=1)
 valor_parcela = st.sidebar.number_input("Valor da Parcela (R$)", min_value=0.0, step=50.0, format="%.2f")
 percentual_venda = st.sidebar.selectbox("Porcentagem de Venda (%)", [20, 25, 30, 40])
-valor_embutido = st.sidebar.selectbox("Valor Embutido (%)", [0, 20, 40])
+valor_embutido = st.sidebar.selectbox("Valor Embutido (%)", [0, 20, 30, 40])
 
 # Botão
 if st.sidebar.button("🚀 Simular"):
@@ -179,4 +179,5 @@ with st.expander("📋 Passo a Passo da Venda Contemplada"):
     ✅ Se você **aceitar**, poderá receber um **pagamento em torno de 20 a 30% do valor da carta**.  
     💡 *Esse valor pode variar conforme as condições específicas da sua cota e a negociação acordada.*
     """)
+
 st.success("✅ Simulação concluída com sucesso!")
