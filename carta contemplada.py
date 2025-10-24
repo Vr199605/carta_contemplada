@@ -69,7 +69,7 @@ st.markdown(f"<h1 style='text-align:center;'>📊 Simulador Consórcio - Carta d
 # Entradas
 st.sidebar.header("📥 Dados da simulação")
 valor_carta = st.sidebar.number_input("Valor da Carta de Crédito (R$)", min_value=1000.0, step=500.0, format="%.2f")
-parcelas = st.sidebar.number_input("Número de Parcelas", min_value=1, step=1)
+parcelas = st.sidebar.number_input("Número de Parcelas Pagas", min_value=1, step=1)
 valor_parcela = st.sidebar.number_input("Valor da Parcela (R$)", min_value=0.0, step=50.0, format="%.2f")
 percentual_venda = st.sidebar.selectbox("Porcentagem de Venda (%)", [20, 25, 30, 40])
 valor_embutido = st.sidebar.selectbox("Valor Embutido (%)", [0, 20, 30, 40])
@@ -181,3 +181,4 @@ with st.expander("📋 Passo a Passo da Venda Contemplada"):
     """)
 
 st.success("✅ Simulação concluída com sucesso!")
+
