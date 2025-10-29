@@ -37,6 +37,7 @@ def mostrar_storytelling():
     col1, col2 = st.columns([2, 1])
     with col1:
         st.markdown("""
+        <div style='color: white;'>
         ## 💡 O Problema que Resolvemos
         
         **Imagine este cenário:**
@@ -47,7 +48,8 @@ def mostrar_storytelling():
         - 💸 **Oportunidades desperdiçadas** por cálculos complexos
         
         **Até agora...**
-        """)
+        </div>
+        """, unsafe_allow_html=True)
         
     with col2:
         st.markdown("📈")
@@ -56,12 +58,14 @@ def mostrar_storytelling():
     
     # Solução
     st.markdown("""
+    <div style='color: white;'>
     ---
     
     ## 🚀 Nossa Solução Inovadora
     
     **Criamos uma ferramenta que transforma complexidade em clareza:**
-    """)
+    </div>
+    """, unsafe_allow_html=True)
     
     # Benefícios em cards
     col1, col2, col3 = st.columns(3)
@@ -75,6 +79,7 @@ def mostrar_storytelling():
             border-left: 5px solid #8B5FBF;
             height: 200px;
             margin-bottom: 20px;
+            color: white;
         '>
             <h3 style='color: #BB86FC; margin-top: 0;'>🎯 Simplicidade</h3>
             <p style='color: #E0E0E0; line-height: 1.5;'>Interface intuitiva que qualquer cliente entende em segundos</p>
@@ -90,6 +95,7 @@ def mostrar_storytelling():
             border-left: 5px solid #8B5FBF;
             height: 200px;
             margin-bottom: 20px;
+            color: white;
         '>
             <h3 style='color: #BB86FC; margin-top: 0;'>💡 Transparência</h3>
             <p style='color: #E0E0E0; line-height: 1.5;'>Todos os cálculos explicados passo a passo</p>
@@ -105,6 +111,7 @@ def mostrar_storytelling():
             border-left: 5px solid #8B5FBF;
             height: 200px;
             margin-bottom: 20px;
+            color: white;
         '>
             <h3 style='color: #BB86FC; margin-top: 0;'>📈 Confiança</h3>
             <p style='color: #E0E0E0; line-height: 1.5;'>Resultados claros que geram segurança na decisão</p>
@@ -113,12 +120,14 @@ def mostrar_storytelling():
     
     # Jornada do cliente
     st.markdown("""
+    <div style='color: white;'>
     ---
     
     ## 🗺️ A Jornada do Cliente Transformada
     
     ### **ANTES** ❌
-    """)
+    </div>
+    """, unsafe_allow_html=True)
     
     st.markdown("""
     <div style='
@@ -127,12 +136,17 @@ def mostrar_storytelling():
         border-radius: 10px;
         margin: 10px 0;
         border-left: 5px solid #FF6B6B;
+        color: white;
     '>
     🔴 **Cliente confuso** → Dúvidas não respondidas → Desistência → Perda de negócio
     </div>
     """, unsafe_allow_html=True)
     
-    st.markdown("### **DEPOIS** ✅")
+    st.markdown("""
+    <div style='color: white;'>
+    ### **DEPOIS** ✅
+    </div>
+    """, unsafe_allow_html=True)
     
     st.markdown("""
     <div style='
@@ -141,6 +155,7 @@ def mostrar_storytelling():
         border-radius: 10px;
         margin: 10px 0;
         border-left: 5px solid #4CAF50;
+        color: white;
     '>
     🟢 **Cliente curioso** → Simulação transparente → Confiança gerada → Negócio fechado
     </div>
@@ -148,6 +163,7 @@ def mostrar_storytelling():
     
     # Diferenciais competitivos
     st.markdown("""
+    <div style='color: white;'>
     ---
     
     ## 🏆 O que Nos Torna Únicos
@@ -158,35 +174,42 @@ def mostrar_storytelling():
     - Animações que engajam o cliente
     
     ### 🧮 **Inteligência nos Cálculos**
-    """)
+    </div>
+    """, unsafe_allow_html=True)
     
     col1, col2 = st.columns(2)
     with col1:
         st.markdown("""
+        <div style='color: white;'>
         **Cálculos que realizamos:**
         - 💰 Valor líquido da carta
         - 📊 Rentabilidade real
         - 🎯 Comparativo de cenários
         - 📈 Projeções mensais
-        """)
+        </div>
+        """, unsafe_allow_html=True)
     
     with col2:
         st.markdown("""
+        <div style='color: white;'>
         **Benefícios:**
         - ✅ Decisões baseadas em dados
         - ✅ Clareza total nos números
         - ✅ Confiança no investimento
         - ✅ Redução de objeções
-        """)
+        </div>
+        """, unsafe_allow_html=True)
     
     # Resultados esperados
     st.markdown("""
+    <div style='color: white;'>
     ---
     
     ## 📊 Impacto nos Negócios
     
     **Com esta ferramenta, esperamos:**
-    """)
+    </div>
+    """, unsafe_allow_html=True)
     
     metrics_col1, metrics_col2, metrics_col3, metrics_col4 = st.columns(4)
     
@@ -204,11 +227,8 @@ def mostrar_storytelling():
     
     # Call to Action final
     st.markdown("""
+    <div style='color: white;'>
     ---
-    """)
-    
-    st.markdown("""
-   
 
     ## 💫 O Futuro Começa Agora
     
@@ -218,7 +238,8 @@ def mostrar_storytelling():
     - 💡 **Referência em transparência** para clientes
     - 📊 **Pioneira em tecnologia** aplicada a investimentos
     - 🎯 **Expert em experiência** do cliente
-    """)
+    </div>
+    """, unsafe_allow_html=True)
     
     st.markdown("""
     <div style='
@@ -228,11 +249,141 @@ def mostrar_storytelling():
         text-align: center;
         margin: 30px 0;
         border: 1px solid #8B5FBF;
+        color: white;
     '>
         <h3 style='color: #BB86FC; margin: 0;'>✨ Esta não é uma simples calculadora - é a ponte entre a dúvida do cliente e a certeza do investimento!</h3>
     </div>
     """, unsafe_allow_html=True)
 
+# Nova função para mostrar cálculos
+def mostrar_calculos():
+    st.markdown("""
+    <div style='
+        background: linear-gradient(135deg, #6A0DAD 0%, #2D2D2D 100%);
+        padding: 40px;
+        border-radius: 15px;
+        color: white;
+        margin: 20px 0;
+        text-align: center;
+    '>
+        <h1 style='color: white; margin-bottom: 10px;'>🧮 Explicação dos Cálculos</h1>
+        <p style='font-size: 1.2em; opacity: 0.9;'>Transparência total na metodologia aplicada</p>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    # Fórmulas e explicações
+    col1, col2 = st.columns([1, 1])
+    
+    with col1:
+        st.markdown("""
+        <div style='
+            background: #2D2D2D;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border-left: 5px solid #8B5FBF;
+            color: white;
+        '>
+            <h3 style='color: #BB86FC; margin-top: 0;'>💰 Valor Líquido da Carta</h3>
+            <p style='font-size: 1.1em; margin-bottom: 10px;'><strong>Fórmula:</strong></p>
+            <p style='background: #3D3D3D; padding: 15px; border-radius: 5px; font-family: monospace;'>
+            Valor Líquido = Valor da Carta × (1 - Valor Embutido ÷ 100)
+            </p>
+            <p style='margin-top: 10px;'><strong>Explicação:</strong> Remove o percentual embutido (taxas administrativas) do valor total da carta para obter o valor líquido disponível.</p>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        st.markdown("""
+        <div style='
+            background: #2D2D2D;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border-left: 5px solid #8B5FBF;
+            color: white;
+        '>
+            <h3 style='color: #BB86FC; margin-top: 0;'>💸 Valor Total Pago</h3>
+            <p style='font-size: 1.1em; margin-bottom: 10px;'><strong>Fórmula:</strong></p>
+            <p style='background: #3D3D3D; padding: 15px; border-radius: 5px; font-family: monospace;'>
+            Total Pago = Nº de Parcelas × Valor da Parcela
+            </p>
+            <p style='margin-top: 10px;'><strong>Explicação:</strong> Representa o investimento total realizado pelo cliente até o momento da venda.</p>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        st.markdown("""
+        <div style='
+            background: #2D2D2D;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border-left: 5px solid #8B5FBF;
+            color: white;
+        '>
+            <h3 style='color: #BB86FC; margin-top: 0;'>🏷️ Valor de Venda</h3>
+            <p style='font-size: 1.1em; margin-bottom: 10px;'><strong>Fórmula:</strong></p>
+            <p style='background: #3D3D3D; padding: 15px; border-radius: 5px; font-family: monospace;'>
+            Valor Venda = Valor Líquido × (Percentual Venda ÷ 100)
+            </p>
+            <p style='margin-top: 10px;'><strong>Explicação:</strong> Calcula o valor que o cliente receberá pela venda da cota, baseado no percentual negociado.</p>
+        </div>
+        """, unsafe_allow_html=True)
+    
+    with col2:
+        st.markdown("""
+        <div style='
+            background: #2D2D2D;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border-left: 5px solid #8B5FBF;
+            color: white;
+        '>
+            <h3 style='color: #BB86FC; margin-top: 0;'>📈 Lucro Realizado</h3>
+            <p style='font-size: 1.1em; margin-bottom: 10px;'><strong>Fórmula:</strong></p>
+            <p style='background: #3D3D3D; padding: 15px; border-radius: 5px; font-family: monospace;'>
+            Lucro = Valor de Venda - Total Pago
+            </p>
+            <p style='margin-top: 10px;'><strong>Explicação:</strong> Resultado financeiro líquido da operação, demonstrando o ganho ou prejuízo real.</p>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        st.markdown("""
+        <div style='
+            background: #2D2D2D;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border-left: 5px solid #8B5FBF;
+            color: white;
+        '>
+            <h3 style='color: #BB86FC; margin-top: 0;'>📊 Rendimento Bruto</h3>
+            <p style='font-size: 1.1em; margin-bottom: 10px;'><strong>Fórmula:</strong></p>
+            <p style='background: #3D3D3D; padding: 15px; border-radius: 5px; font-family: monospace;'>
+            Rendimento Bruto = (Lucro ÷ Total Pago) × 100
+            </p>
+            <p style='margin-top: 10px;'><strong>Explicação:</strong> Retorno percentual sobre o capital investido, sem considerar o prazo da operação.</p>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        st.markdown("""
+        <div style='
+            background: #2D2D2D;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border-left: 5px solid #8B5FBF;
+            color: white;
+        '>
+            <h3 style='color: #BB86FC; margin-top: 0;'>📅 Rendimento Mensal</h3>
+            <p style='font-size: 1.1em; margin-bottom: 10px;'><strong>Fórmula:</strong></p>
+            <p style='background: #3D3D3D; padding: 15px; border-radius: 5px; font-family: monospace;'>
+            Rend. Mensal = [(1 + Rend. Bruto/100)^(1/Parcelas) - 1] × 100
+            </p>
+            <p style='margin-top: 10px;'><strong>Explicação:</strong> Taxa equivalente composta mensal que, se aplicada mês a mês, resultaria no rendimento bruto total alcançado.</p>
+        </div>
+        """, unsafe_allow_html=True)
+    
 # Função principal do simulador
 def mostrar_simulador():
     # Estilo visual
@@ -279,24 +430,13 @@ def mostrar_simulador():
                 margin-bottom: 0.15em;
                 margin-top: 0.7em;
             }}
-            /* ESTILOS PARA SUBTÍTULOS EM BRANCO */
+            /* NOVO ESTILO PARA SUBTÍTULOS DA SIMULAÇÃO EM BRANCO */
             .sidebar-subtitle {{
                 color: {COR_BRANCO} !important;
                 font-weight: 700;
                 font-size: 1.3em;
                 margin-bottom: 0.5em;
                 margin-top: 1em;
-            }}
-            .input-label {{
-                color: {COR_BRANCO} !important;
-                font-weight: 600;
-                font-size: 1.1em;
-                margin-bottom: 0.3em;
-            }}
-            .stSelectbox label, .stNumberInput label {{
-                color: {COR_BRANCO} !important;
-                font-weight: 600;
-                font-size: 1.1em;
             }}
         </style>
     """, unsafe_allow_html=True)
@@ -305,47 +445,11 @@ def mostrar_simulador():
 
     # Entradas - COM SUBTÍTULOS EM BRANCO
     st.sidebar.markdown(f"<div class='sidebar-subtitle'>📥 Dados da simulação</div>", unsafe_allow_html=True)
-    
-    # Adicionando labels customizados em branco para cada input
-    st.sidebar.markdown(f"<div class='input-label'>Valor da Carta de Crédito (R$)</div>", unsafe_allow_html=True)
-    valor_carta = st.sidebar.number_input(
-        "Valor da Carta de Crédito (R$)", 
-        min_value=1000.0, 
-        step=500.0, 
-        format="%.2f",
-        label_visibility="collapsed"
-    )
-    
-    st.sidebar.markdown(f"<div class='input-label'>Número de Parcelas</div>", unsafe_allow_html=True)
-    parcelas = st.sidebar.number_input(
-        "Número de Parcelas", 
-        min_value=1, 
-        step=1,
-        label_visibility="collapsed"
-    )
-    
-    st.sidebar.markdown(f"<div class='input-label'>Valor da Parcela (R$)</div>", unsafe_allow_html=True)
-    valor_parcela = st.sidebar.number_input(
-        "Valor da Parcela (R$)", 
-        min_value=0.0, 
-        step=50.0, 
-        format="%.2f",
-        label_visibility="collapsed"
-    )
-    
-    st.sidebar.markdown(f"<div class='input-label'>Porcentagem de Venda (%)</div>", unsafe_allow_html=True)
-    percentual_venda = st.sidebar.selectbox(
-        "Porcentagem de Venda (%)", 
-        [20, 25, 30, 40],
-        label_visibility="collapsed"
-    )
-    
-    st.sidebar.markdown(f"<div class='input-label'>Valor Embutido (%)</div>", unsafe_allow_html=True)
-    valor_embutido = st.sidebar.selectbox(
-        "Valor Embutido (%)", 
-        [0, 20, 40],
-        label_visibility="collapsed"
-    )
+    valor_carta = st.sidebar.number_input("Valor da Carta de Crédito (R$)", min_value=1000.0, step=500.0, format="%.2f")
+    parcelas = st.sidebar.number_input("Número de Parcelas", min_value=1, step=1)
+    valor_parcela = st.sidebar.number_input("Valor da Parcela (R$)", min_value=0.0, step=50.0, format="%.2f")
+    percentual_venda = st.sidebar.selectbox("Porcentagem de Venda (%)", [20, 25, 30, 40])
+    valor_embutido = st.sidebar.selectbox("Valor Embutido (%)", [0, 20, 40])
 
     # Botão
     if st.sidebar.button("🚀 Simular"):
@@ -464,16 +568,20 @@ def main():
         initial_sidebar_state="expanded"
     )
     
-    # Abas principais
-    tab1, tab2 = st.tabs(["📊 Simulador", "🎯 Storytelling"])
+    # Abas principais - ADICIONADA A NOVA ABA DE CÁLCULOS
+    tab1, tab2, tab3 = st.tabs(["📊 Simulador", "🎯 Storytelling", "🧮 Cálculos"])
     
     with tab1:
         mostrar_simulador()
         
     with tab2:
         mostrar_storytelling()
+        
+    with tab3:
+        mostrar_calculos()
 
 if __name__ == "__main__":
     main()
+
 
 
