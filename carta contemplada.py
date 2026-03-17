@@ -547,7 +547,7 @@ def mostrar_simulador():
 def main():
     # Configuração da página
     st.set_page_config(
-        page_title="Simulador Consórcio - Capital Invest",
+        page_title="Simulador Consórcio - Maldivas",
         page_icon="📊",
         layout="wide",
         initial_sidebar_state="expanded"
