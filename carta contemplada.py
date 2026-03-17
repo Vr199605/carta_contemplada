@@ -8,6 +8,7 @@ COR_BRANCO = "#FFFFFF"
 COR_FUNDO = "#1E1E1E"
 COR_ROXO_CLARO = "#8B5FBF"
 COR_CINZA_ESCURO = "#2D2D2D"
+COR_AZUL_MALDIVAS = "#003366" # Nova cor Azul Escuro para o grupo Maldivas
 
 # Função de cálculo
 def simular_consorcio(valor_carta, parcelas, valor_parcela, percentual_venda, valor_embutido):
@@ -37,7 +38,7 @@ def mostrar_storytelling():
     col1, col2 = st.columns([2, 1])
     with col1:
         st.markdown("""
-        <div style='color: white;'>
+        <div style='color: inherit;'>
         ## 💡 O Problema que Resolvemos
         
         **Imagine este cenário:**
@@ -58,7 +59,7 @@ def mostrar_storytelling():
     
     # Solução
     st.markdown("""
-    <div style='color: white;'>
+    <div style='color: inherit;'>
     ---
     
     ## 🚀 Nossa Solução Inovadora
@@ -71,9 +72,9 @@ def mostrar_storytelling():
     col1, col2, col3 = st.columns(3)
     
     with col1:
-        st.markdown("""
+        st.markdown(f"""
         <div style='
-            background: #2D2D2D;
+            background: {COR_AZUL_MALDIVAS};
             padding: 20px;
             border-radius: 10px;
             border-left: 5px solid #8B5FBF;
@@ -87,9 +88,9 @@ def mostrar_storytelling():
         """, unsafe_allow_html=True)
     
     with col2:
-        st.markdown("""
+        st.markdown(f"""
         <div style='
-            background: #2D2D2D;
+            background: {COR_AZUL_MALDIVAS};
             padding: 20px;
             border-radius: 10px;
             border-left: 5px solid #8B5FBF;
@@ -103,9 +104,9 @@ def mostrar_storytelling():
         """, unsafe_allow_html=True)
     
     with col3:
-        st.markdown("""
+        st.markdown(f"""
         <div style='
-            background: #2D2D2D;
+            background: {COR_AZUL_MALDIVAS};
             padding: 20px;
             border-radius: 10px;
             border-left: 5px solid #8B5FBF;
@@ -120,7 +121,7 @@ def mostrar_storytelling():
     
     # Jornada do cliente
     st.markdown("""
-    <div style='color: white;'>
+    <div style='color: inherit;'>
     ---
     
     ## 🗺️ A Jornada do Cliente Transformada
@@ -143,7 +144,7 @@ def mostrar_storytelling():
     """, unsafe_allow_html=True)
     
     st.markdown("""
-    <div style='color: white;'>
+    <div style='color: inherit;'>
     ### **DEPOIS** ✅
     </div>
     """, unsafe_allow_html=True)
@@ -163,7 +164,7 @@ def mostrar_storytelling():
     
     # Diferenciais competitivos
     st.markdown("""
-    <div style='color: white;'>
+    <div style='color: inherit;'>
     ---
     
     ## 🏆 O que Nos Torna Únicos
@@ -180,7 +181,7 @@ def mostrar_storytelling():
     col1, col2 = st.columns(2)
     with col1:
         st.markdown("""
-        <div style='color: white;'>
+        <div style='color: inherit;'>
         **Cálculos que realizamos:**
         - 💰 Valor líquido da carta
         - 📊 Rentabilidade real
@@ -191,7 +192,7 @@ def mostrar_storytelling():
     
     with col2:
         st.markdown("""
-        <div style='color: white;'>
+        <div style='color: inherit;'>
         **Benefícios:**
         - ✅ Decisões baseadas em dados
         - ✅ Clareza total nos números
@@ -202,7 +203,7 @@ def mostrar_storytelling():
     
     # Resultados esperados
     st.markdown("""
-    <div style='color: white;'>
+    <div style='color: inherit;'>
     ---
     
     ## 📊 Impacto nos Negócios
@@ -227,7 +228,7 @@ def mostrar_storytelling():
     
     # Call to Action final
     st.markdown("""
-    <div style='color: white;'>
+    <div style='color: inherit;'>
     ---
 
     ## 💫 O Futuro Começa Agora
@@ -241,9 +242,9 @@ def mostrar_storytelling():
     </div>
     """, unsafe_allow_html=True)
     
-    st.markdown("""
+    st.markdown(f"""
     <div style='
-        background: #2D2D2D;
+        background: {COR_AZUL_MALDIVAS};
         padding: 25px;
         border-radius: 10px;
         text-align: center;
@@ -257,9 +258,9 @@ def mostrar_storytelling():
 
 # Nova função para mostrar cálculos
 def mostrar_calculos():
-    st.markdown("""
+    st.markdown(f"""
     <div style='
-        background: linear-gradient(135deg, #6A0DAD 0%, #2D2D2D 100%);
+        background: linear-gradient(135deg, #6A0DAD 0%, {COR_AZUL_MALDIVAS} 100%);
         padding: 40px;
         border-radius: 15px;
         color: white;
@@ -275,9 +276,9 @@ def mostrar_calculos():
     col1, col2 = st.columns([1, 1])
     
     with col1:
-        st.markdown("""
+        st.markdown(f"""
         <div style='
-            background: #2D2D2D;
+            background: {COR_AZUL_MALDIVAS};
             padding: 25px;
             border-radius: 10px;
             margin: 15px 0;
@@ -286,16 +287,16 @@ def mostrar_calculos():
         '>
             <h3 style='color: #BB86FC; margin-top: 0;'>💰 Valor Líquido da Carta</h3>
             <p style='font-size: 1.1em; margin-bottom: 10px;'><strong>Fórmula:</strong></p>
-            <p style='background: #3D3D3D; padding: 15px; border-radius: 5px; font-family: monospace;'>
+            <p style='background: #111; padding: 15px; border-radius: 5px; font-family: monospace;'>
             Valor Líquido = Valor da Carta × (1 - Valor Embutido ÷ 100)
             </p>
             <p style='margin-top: 10px;'><strong>Explicação:</strong> Remove o percentual embutido (taxas administrativas) do valor total da carta para obter o valor líquido disponível.</p>
         </div>
         """, unsafe_allow_html=True)
         
-        st.markdown("""
+        st.markdown(f"""
         <div style='
-            background: #2D2D2D;
+            background: {COR_AZUL_MALDIVAS};
             padding: 25px;
             border-radius: 10px;
             margin: 15px 0;
@@ -304,16 +305,16 @@ def mostrar_calculos():
         '>
             <h3 style='color: #BB86FC; margin-top: 0;'>💸 Valor Total Pago</h3>
             <p style='font-size: 1.1em; margin-bottom: 10px;'><strong>Fórmula:</strong></p>
-            <p style='background: #3D3D3D; padding: 15px; border-radius: 5px; font-family: monospace;'>
+            <p style='background: #111; padding: 15px; border-radius: 5px; font-family: monospace;'>
             Total Pago = Nº de Parcelas × Valor da Parcela
             </p>
             <p style='margin-top: 10px;'><strong>Explicação:</strong> Representa o investimento total realizado pelo cliente até o momento da venda.</p>
         </div>
         """, unsafe_allow_html=True)
         
-        st.markdown("""
+        st.markdown(f"""
         <div style='
-            background: #2D2D2D;
+            background: {COR_AZUL_MALDIVAS};
             padding: 25px;
             border-radius: 10px;
             margin: 15px 0;
@@ -322,7 +323,7 @@ def mostrar_calculos():
         '>
             <h3 style='color: #BB86FC; margin-top: 0;'>🏷️ Valor de Venda</h3>
             <p style='font-size: 1.1em; margin-bottom: 10px;'><strong>Fórmula:</strong></p>
-            <p style='background: #3D3D3D; padding: 15px; border-radius: 5px; font-family: monospace;'>
+            <p style='background: #111; padding: 15px; border-radius: 5px; font-family: monospace;'>
             Valor Venda = Valor Líquido × (Percentual Venda ÷ 100)
             </p>
             <p style='margin-top: 10px;'><strong>Explicação:</strong> Calcula o valor que o cliente receberá pela venda da cota, baseado no percentual negociado.</p>
@@ -330,9 +331,9 @@ def mostrar_calculos():
         """, unsafe_allow_html=True)
     
     with col2:
-        st.markdown("""
+        st.markdown(f"""
         <div style='
-            background: #2D2D2D;
+            background: {COR_AZUL_MALDIVAS};
             padding: 25px;
             border-radius: 10px;
             margin: 15px 0;
@@ -341,16 +342,16 @@ def mostrar_calculos():
         '>
             <h3 style='color: #BB86FC; margin-top: 0;'>📈 Lucro Realizado</h3>
             <p style='font-size: 1.1em; margin-bottom: 10px;'><strong>Fórmula:</strong></p>
-            <p style='background: #3D3D3D; padding: 15px; border-radius: 5px; font-family: monospace;'>
+            <p style='background: #111; padding: 15px; border-radius: 5px; font-family: monospace;'>
             Lucro = Valor de Venda - Total Pago
             </p>
             <p style='margin-top: 10px;'><strong>Explicação:</strong> Resultado financeiro líquido da operação, demonstrando o ganho ou prejuízo real.</p>
         </div>
         """, unsafe_allow_html=True)
         
-        st.markdown("""
+        st.markdown(f"""
         <div style='
-            background: #2D2D2D;
+            background: {COR_AZUL_MALDIVAS};
             padding: 25px;
             border-radius: 10px;
             margin: 15px 0;
@@ -359,16 +360,16 @@ def mostrar_calculos():
         '>
             <h3 style='color: #BB86FC; margin-top: 0;'>📊 Rendimento Bruto</h3>
             <p style='font-size: 1.1em; margin-bottom: 10px;'><strong>Fórmula:</strong></p>
-            <p style='background: #3D3D3D; padding: 15px; border-radius: 5px; font-family: monospace;'>
+            <p style='background: #111; padding: 15px; border-radius: 5px; font-family: monospace;'>
             Rendimento Bruto = (Lucro ÷ Total Pago) × 100
             </p>
             <p style='margin-top: 10px;'><strong>Explicação:</strong> Retorno percentual sobre o capital investido, sem considerar o prazo da operação.</p>
         </div>
         """, unsafe_allow_html=True)
         
-        st.markdown("""
+        st.markdown(f"""
         <div style='
-            background: #2D2D2D;
+            background: {COR_AZUL_MALDIVAS};
             padding: 25px;
             border-radius: 10px;
             margin: 15px 0;
@@ -377,7 +378,7 @@ def mostrar_calculos():
         '>
             <h3 style='color: #BB86FC; margin-top: 0;'>📅 Rendimento Mensal</h3>
             <p style='font-size: 1.1em; margin-bottom: 10px;'><strong>Fórmula:</strong></p>
-            <p style='background: #3D3D3D; padding: 15px; border-radius: 5px; font-family: monospace;'>
+            <p style='background: #111; padding: 15px; border-radius: 5px; font-family: monospace;'>
             Rend. Mensal = [(1 + Rend. Bruto/100)^(1/Parcelas) - 1] × 100
             </p>
             <p style='margin-top: 10px;'><strong>Explicação:</strong> Taxa equivalente composta mensal que, se aplicada mês a mês, resultaria no rendimento bruto total alcançado.</p>
@@ -386,35 +387,24 @@ def mostrar_calculos():
     
 # Função principal do simulador
 def mostrar_simulador():
-    # Estilo visual
+    # Estilo adaptativo para Light/Dark e cor Maldivas
     st.markdown(f"""
         <style>
-            .main {{
-                background-color: {COR_FUNDO};
-                color: {COR_BRANCO};
+            /* Define cores baseadas no tema do Streamlit */
+            :root {{
+                --text-color: inherit;
             }}
-            body {{
-                color: {COR_BRANCO};
-                background-color: {COR_FUNDO};
+            .stApp {{
+                color: var(--text-color);
             }}
-            h1, h2, h3, .stMarkdown {{
+            h1, h2, h3 {{
                 color: {COR_ROXO} !important;
-                font-weight: bold !important;
             }}
             .stButton > button {{
                 background-color: {COR_ROXO};
                 color: white;
                 font-weight: bold;
                 border-radius: 8px;
-            }}
-            .stSidebar > div:first-child {{
-                background-color: {COR_PRETO};
-                color: {COR_BRANCO};
-            }}
-            .stMetric label {{
-                color: {COR_BRANCO};
-                font-size: 1.1em;
-                font-weight: 600;
             }}
             .result-subtitle {{
                 color: {COR_ROXO};
@@ -430,9 +420,8 @@ def mostrar_simulador():
                 margin-bottom: 0.15em;
                 margin-top: 0.7em;
             }}
-            /* NOVO ESTILO PARA SUBTÍTULOS DA SIMULAÇÃO EM BRANCO */
             .sidebar-subtitle {{
-                color: {COR_BRANCO} !important;
+                color: inherit !important;
                 font-weight: 700;
                 font-size: 1.3em;
                 margin-bottom: 0.5em;
@@ -443,7 +432,7 @@ def mostrar_simulador():
 
     st.markdown(f"<h1 style='text-align:center;'>📊 Simulador Consórcio - Carta de Crédito</h1>", unsafe_allow_html=True)
 
-    # Entradas - COM SUBTÍTULOS EM BRANCO
+    # Entradas
     st.sidebar.markdown(f"<div class='sidebar-subtitle'>📥 Dados da simulação</div>", unsafe_allow_html=True)
     valor_carta = st.sidebar.number_input("Valor da Carta de Crédito (R$)", min_value=1000.0, step=500.0, format="%.2f")
     parcelas = st.sidebar.number_input("Número de Parcelas", min_value=1, step=1)
@@ -491,16 +480,16 @@ def mostrar_simulador():
         fig = go.Figure()
         fig.add_trace(go.Bar(name='Total Pago', x=['Simulação'], y=[total_pago], marker_color=COR_ROXO))
         fig.add_trace(go.Bar(name='Valor de Venda', x=['Simulação'], y=[valor_venda], marker_color='#BB86FC'))
-        fig.add_trace(go.Bar(name='Lucro', x=['Simulação'], y=[lucro], marker_color='#3700B3'))
+        fig.add_trace(go.Bar(name='Lucro', x=['Simulação'], y=[lucro], marker_color=COR_AZUL_MALDIVAS))
         fig.update_layout(
             barmode='group',
             title={'text': '💹 Comparativo de Valores', 'font': {'size': 24, 'color': COR_ROXO}, 'x': 0.5},
             xaxis_title={'text': 'Indicadores', 'font': {'size': 18, 'color': COR_ROXO}},
             yaxis_title={'text': 'R$', 'font': {'size': 18, 'color': COR_ROXO}},
             legend=dict(font=dict(size=16, color=COR_ROXO)),
-            paper_bgcolor=COR_FUNDO,
-            plot_bgcolor=COR_FUNDO,
-            font_color=COR_BRANCO
+            paper_bgcolor='rgba(0,0,0,0)',
+            plot_bgcolor='rgba(0,0,0,0)',
+            font_color='gray'
         )
         st.plotly_chart(fig, use_container_width=True)
 
@@ -519,10 +508,9 @@ def mostrar_simulador():
             },
             domain={'x': [0, 1], 'y': [0, 1]}
         ))
-        gauge.update_layout(paper_bgcolor=COR_FUNDO, font_color=COR_BRANCO)
+        gauge.update_layout(paper_bgcolor='rgba(0,0,0,0)', font_color='gray')
         st.plotly_chart(gauge, use_container_width=True)
 
-        # Explicações
         with st.expander("📘 Como interpretar os resultados?"):
             st.markdown("""
             - **Carta Líquida:** Valor restante da carta após o embutido.
@@ -531,36 +519,14 @@ def mostrar_simulador():
             - **Rendimento Mensal:** Equivalente composto ao longo dos meses.
             """)
 
-        # Passo a passo didático
         with st.expander("📋 Passo a Passo da Venda Contemplada"):
             st.markdown("""
             ### 🔄 Etapas para Vender Sua Cota Contemplada
-
-            **1️⃣ Contemplação da Carta**  
-            O primeiro passo é ter sua cota contemplada, o que pode acontecer de duas formas:
-            - **Por sorteio**, o que geralmente torna a carta **mais atrativa para os compradores**;
-            - **Por lance fixo***, uma opção comum e também valorizada no mercado.  
-            * *O lance fixo costuma ter boa aceitação entre investidores.*
-
-            **2️⃣ Solicitação do Extrato Financeiro da Cota**  
-            Após a contemplação, você solicita à administradora do consórcio o **extrato financeiro detalhado da cota**.  
-            🔎 Esse documento mostra tudo: valor da carta, saldo devedor, parcelas pagas e demais informações financeiras.  
-            📝 *Importante: A administradora é legalmente obrigada a fornecer esse extrato.*
-
-            **3️⃣ Envio para Análise da Capital Invest**  
-            Você envia o extrato para a Capital Invest, que irá analisar cuidadosamente as condições da sua cota.  
-            Isso inclui o valor líquido disponível, o histórico de pagamentos e possíveis pendências.
-
-            **4️⃣ Proposta e Pagamento Inicial ao Cliente**  
-            Após a análise, fazemos uma **proposta de compra personalizada** da sua carta.  
-            ✅ Se você **aceitar**, poderá receber um **pagamento em torno de 20 a 30% do valor da carta**.  
-            💡 *Esse valor pode variar conforme as condições específicas da sua cota e a negociação acordada.*
-            """)
+            **1️⃣ Contemplação da Carta** **2️⃣ Solicitação do Extrato Financeiro** **3️⃣ Envio para Análise da Capital Invest** **4️⃣ Proposta e Pagamento Inicial** """)
         st.success("✅ Simulação concluída com sucesso!")
 
 # Função principal
 def main():
-    # Configuração da página
     st.set_page_config(
         page_title="Simulador Consórcio - Capital Invest",
         page_icon="📊",
@@ -568,7 +534,6 @@ def main():
         initial_sidebar_state="expanded"
     )
     
-    # Abas principais - ADICIONADA A NOVA ABA DE CÁLCULOS
     tab1, tab2, tab3 = st.tabs(["📊 Simulador", "🎯 Storytelling", "🧮 Cálculos"])
     
     with tab1:
